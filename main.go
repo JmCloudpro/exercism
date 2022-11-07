@@ -1,11 +1,16 @@
 package main
 
 import (
+	"exercism/luhn"
 	"fmt"
-	"luhn"
 )
 
 func main() {
-	fmt.Println(luhn.Valid(ASDFADF))
+	if luhn.Valid("555646458546848654 6 4 84 654 6") {
+		fmt.Println("Valid")
+	} else {
+		fmt.Println("Invalid Valid")
+
+	}
 
 }
